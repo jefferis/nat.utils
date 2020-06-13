@@ -7,11 +7,11 @@
 #' @param nchunks The desired number of chunks
 #' @param chunksize The desired number of items per chunk
 #'
-#' @return The elements of x split into a list of chunks or (when x is missing)
-#'   a vector of chunk id corresponding to each element of the input .
+#' @return The elements of x split into a list of chunks or (when \code{x} is
+#'   missing) a vector of integer indices in the range \code{1:nchunks}
+#'   specifying the chunk for each input element .
 #'
 #' @export
-#'
 #' @examples
 #' make_chunks(1:11, nchunks=2)
 #' make_chunks(size=11, chunksize=2)

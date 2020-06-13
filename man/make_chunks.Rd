@@ -17,8 +17,9 @@ is present)}
 \item{chunksize}{The desired number of items per chunk}
 }
 \value{
-The elements of x split into a list of chunks or (when x is missing)
-  a vector of chunk id corresponding to each element of the input .
+The elements of x split into a list of chunks or (when \code{x} is
+  missing) a vector of integer indices in the range \code{1:nchunks}
+  specifying the chunk for each input element .
 }
 \description{
 Split inputs into a number of chunks
